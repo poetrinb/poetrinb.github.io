@@ -952,5 +952,77 @@ section.genapbelas .kotak{
 /* SECTION TUJUHBELAS*/
 
 section.tujuhbelas{
-	background-color: red;
+	background-color: #960030;
+} 
+
+section.tujuhbelas .kotak{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width:1000px;
+	height: 150px;
+} 
+
+section.tujuhbelas .kotak .face {
+	position: absolute;
+	width: 500px;
+	height: 150px;
+	line-height: 150px;
+	overflow: hidden;
+	font-size: 6em;
+	text-align: center;
+} 
+
+section.tujuhbelas .kotak .face span{
+	width:100%;
+	height:100%;
+	display: block;
+	transition:.5s;
+} 
+
+section.tujuhbelas .kotak .face.face1{
+	background:#d80045;
+	color: white;
+	transform-origin: left;
+	left:0;
+	transform: perspective(800px) rotatey(-64deg);
+} 
+
+section.tujuhbelas .kotak .face.face2{
+	background:#f1004d;
+	color: white;
+	transform-origin: right;
+	right:0;
+	transform: perspective(800px) rotatey(64deg);
+} 
+
+section.tujuhbelas .kotak .face.face1 span{
+	position: absolute;
+	animation: textg1 10s linear infinite;
+} 
+
+@keyframes textg1{
+	0%{
+		left: 200%;
+	} 
+	
+	100%{
+		left: -100%;
+	} 
+} 
+
+section.tujuhbelas .kotak .face.face2 span{
+	position: absolute;
+	animation: textg2 10s linear infinite;
+} 
+
+@keyframes textg2{
+	0%{
+		right: -100%;
+	} 
+	
+	100%{
+		right: 200%;
+	} 
 } 
