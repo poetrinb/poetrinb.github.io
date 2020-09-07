@@ -1,0 +1,947 @@
+*{
+		margin:0;
+		padding:0;
+		box-sizing: border-box;
+		/*font-family: 'Roboto', sans-serif;*/
+	} 
+
+body{
+	font-family: 'Poppins', sans-serif;
+	pointer-events: none;
+} 
+
+section.tengah{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	overflow: hidden;
+	position: relative;
+} 
+
+/*utility*/
+
+.box-intragram {
+	position: absolute;
+	bottom:10px;
+	left:10px;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	opacity: 0.5;
+} 
+.box-intragram img.instragram{
+	width: 70px;
+	height: 70px;
+} 
+	
+.box-intragram p {
+	color: white;
+	font-size: 2.5em;
+} 
+
+/*SECTION SATU*/
+section.satu {
+	background: linear-gradient(to top, deepskyblue, blue);
+	color: white;
+	z-index: -2;
+	padding: 10%;
+} 
+
+section.satu img {
+	position: absolute;
+	z-index: -1;
+	opacity: 0.4;
+	width: 120%;
+	height: 100%;
+} 
+section.satu h1 {
+	font-size: 8em;
+	font-weight: 600;
+	letter-spacing: 10px;
+} 
+
+section.satu p {
+	color: white;
+	opacity: 0.5;
+	font-weight: 100;
+	display: inline-block;
+	font-size: 160px;
+	transform: translatey(5px);
+} 
+
+
+div.bintang{
+	position: absolute;
+	background-color: white;
+	border-radius: 50%;
+	animation: bintang linear infinite;
+	z-index:-2;
+} 
+
+@keyframes bintang{
+	0%{opacity:0; transform: translatey(0)}
+	10%,90%{opacity:1}
+	100%{ opacity:0; transform: translatey(-300px)}
+} 
+
+
+
+/*SECTION DUA*/
+section.dua{
+	background: darkviolet;
+} 
+.circle {
+	transform-style: preserve-3d;
+	animation: animate1 8s linear infinite;
+} 
+	
+@keyframes animate1{
+	0%{
+		transform: perspective(900px) rotateY(360deg) rotateX(15deg);
+	} 
+	100%{
+		transform: perspective(900px) rotateY(0deg) rotateX(15deg);
+	} 
+} 
+	
+.circle .char{
+		position: absolute;
+		top:0;
+		left:0;
+		background-color: white;
+		color: blue;
+		font-size: 4em;
+		padding: 8px 15px;
+		border-top: 4px solid violet;
+		border-bottom: 4px solid violet;
+		transform-style: preserve-3d;
+		transform-origin: 0 0;
+		transform: rotateY(calc(var(--char-index) * 12deg)) translateZ(250px);
+} 
+
+section.dua i{
+	position: absolute;
+	top: -250px;
+	background: rgba(255,255,255,.5);
+	animation: animate2 linear infinite;
+} 
+
+@keyframes animate2{
+	0%{ transform: translatey(0)}
+	100%{ transform: translatey(100vh)}
+} 
+
+/*SECTION TILU*/
+
+section.tilu{
+	background-color: #333;
+	z-index: -2;
+} 
+section.tilu img.love{
+	position: absolute;
+	z-index: -1;
+	opacity: 0.1;
+} 
+.loader {
+	position: relative;
+} 
+.loader span{
+	position: relative;
+	color: white;
+	font-size: 4em;
+	display: inline-block;
+	text-transform: uppercase;
+	animation: state 2.2s ease-in-out infinite;
+	font-weight: bold;
+	animation-delay: calc(0.1s * var(--i));
+} 
+
+@keyframes state {
+	0%,40%,100%{
+		transform: translatey(0px);
+	} 
+	20%{
+		transform: translatey(-80px);
+	} 
+} 
+
+
+/*SECTION opat*/
+
+
+section.opat{
+	background-color: dodgerblue;
+} 
+
+section.opat .imgmuter {
+	position: relative;
+	width: 250px;
+	height:250px;
+	transform-style: preserve-3d;
+	animation: sayangg 20s linear infinite;
+} 
+
+@keyframes sayangg {
+	0%{
+		transform: perspective(1000px) rotateY(0deg);
+	} 
+	100%{
+	transform: perspective(1000px) rotateY(360deg);
+	} 
+} 
+
+section.opat .imgmuter span{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	background: white;
+	transform: rotatey(calc(var(--i) * 45deg)) translateZ(400px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} 
+
+section.opat .imgmuter span img {
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+} 
+
+/* SECTION Lima*/
+
+section.lima{
+	background-color: white;
+} 
+
+.geser{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+} 
+
+.geser .bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	animation: geser 6s ease-in-out infinite;
+} 
+
+.geser h2{
+	color: white;
+	z-index: 1;
+	font-size: 9em;
+	font-weight: bold;
+	letter-spacing: 5px;
+	transform: translatex(-20px);
+} 
+
+@keyframes geser {
+	0%{
+		transform: scalex(0);
+		transform-origin: left;
+		background-color: #ff2c60;
+	}
+	25%{
+	transform: scalex(1);
+	transform-origin: left;
+	background-color: #ff2c60;
+	}
+	25.001%{
+	transform: scalex(1);
+	transform-origin: right;
+	background-color: #ff2c60;
+	}
+	50%{
+	transform: scalex(0);
+	transform-origin: right;
+	background-color: #ff2c60;
+	}
+	50.001%{
+	background-color: #03a94f;
+	}
+	75%{
+	transform: scalex(1);
+	transform-origin: right;
+	background-color: #03a94f;
+	}
+	75.001%{
+	transform: scalex(1);
+	transform-origin: left;
+	background-color: #03a94f;
+	}
+	100%{
+	transform: scalex(0);
+	transform-origin: left;
+	background-color: #03a94f;
+	}
+} 
+
+
+
+/*SECTION GENAP*/
+
+section.genap{
+	background-color: white;
+} 
+h1.bdanp{
+	font-size: 35em;
+	position:absolute;
+	color: silver;
+	opacity: 0.3;
+} 
+.water {
+	position: relative;
+} 
+
+.water h2 {
+	font-size: 10em;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	font-weight: bold;
+	text-transform: uppercase;
+} 
+
+.water h2:nth-child(1){
+	color: transparent;
+	-webkit-text-stroke: 2px dodgerblue;
+} 
+
+.water h2:nth-child(2){
+	color: dodgerblue;
+	animation: water 4s ease-in-out infinite;
+} 
+
+@keyframes water{
+	0%,100% {
+		clip-path: polygon(0% 45%,15% 44%,32% 50%, 54% 60%, 70% 61%,84% 59%,100% 52%,100% 100%, 0% 100%);
+	} 
+	50%{
+		clip-path: polygon(0% 60%, 16% 65%, 34% 66%,51% 62%,67% 50%,84% 45%,100% 46%,100% 100%, 0 100%);
+	} 
+} 
+
+/* SECTION TUJUH */
+section.tujuh {
+	background: radial-gradient(#673ab7, #190838);;
+} 
+
+section.tujuh h2{
+	position: relative;
+	width: 80%;
+	font-size: 6.2em;
+	color: white;
+	letter-spacing: 5px;
+} 
+
+section.tujuh h2 span{
+	color: white;
+	display: none;
+} 
+
+
+/* SECTION DELAPAN*/
+section.dalapan{
+	background-color: white;
+} 
+
+section.dalapan h1.bp {
+ position: relative;
+ font-size: 8em;
+ color: #222;
+ text-transform: uppercase;
+ border-bottom: 16px solid #222;
+ letter-spacing: 0.05em;
+ line-height: 1.2em;
+} 
+
+section.dalapan h1.bdanp{
+	font-size: 35em;
+	position:absolute;
+	color: silver;
+	opacity: 0.3;
+} 
+
+section.dalapan h1.bp:before {
+	content: attr(data-text);
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	color: orangered;
+	border-bottom: 16px solid orangered;
+	overflow: hidden;
+	animation: badrun 10s linear infinite;
+} 
+
+@keyframes badrun {
+	0%{
+		width: 0%;
+	} 
+	100%{
+		width: 100%;
+	} 
+} 
+
+
+/* SECTION Sapalan*/
+
+section.salapan{
+	background-color: grey;
+} 
+
+section.salapan h2{
+	font-size: 7em;
+	position:relative;
+} 
+
+section.salapan h2 span {
+	position: relative;
+	color: transparent;
+	-webkit-text-stroke: 2px rgba(255,255,255,.8);
+} 
+
+section.salapan h2 span:before, 
+section.salapan h2 span:after{
+	content: attr(data-kata);
+	position: absolute;
+	left:0;
+	top:0;
+} 
+
+section.salapan h2 span:before{
+	z-index: 9;
+	-webkit-text-stroke: 2px rgba(255,255,255,.5);
+	animation: bputri1 1s ease-in-out infinite;
+} 
+
+@keyframes bputri1{
+	0%,100%{
+		transform: translate(0,0);
+	} 
+	50%{
+		transform: translate(40px, -40px);
+	} 
+} 
+
+section.salapan h2 span:after{
+	z-index: 10;
+	-webkit-text-stroke: 2px rgba(255,255,255,.5);
+	animation: bputri2 1s ease-in-out infinite;
+} 
+
+@keyframes bputri2{
+	0%,100%{
+		transform: translate(0,0);
+	} 
+	50%{
+		transform: translate(20px, -20px);
+	} 
+} 
+
+section.salapan h2 span:nth-child(1):before, 
+section.salapan h2 span:nth-child(1):after{
+	animation-delay: 0s;
+} 
+
+section.salapan h2 span:nth-child(2):before, 
+section.salapan h2 span:nth-child(2):after{
+	animation-delay: 0.1s;
+} 
+section.salapan h2 span:nth-child(3):before, 
+section.salapan h2 span:nth-child(3):after{
+	animation-delay: 0.2s;
+} 
+
+section.salapan h2 span:nth-child(4):before, 
+section.salapan h2 span:nth-child(4):after{
+	animation-delay: 0.3s;
+} 
+
+section.salapan h2 span:nth-child(5):before, 
+section.salapan h2 span:nth-child(5):after{
+	animation-delay: 0.4s;
+} 
+
+section.salapan h2 span:nth-child(6):before, 
+section.salapan h2 span:nth-child(6):after{
+	animation-delay: 0.5s;
+} 
+
+section.salapan h2 span:nth-child(7):before, 
+section.salapan h2 span:nth-child(7):after{
+	animation-delay: 0.6s;
+} 
+
+section.salapan h2 span:nth-child(8):before, 
+section.salapan h2 span:nth-child(8):after{
+	animation-delay: 0.7s;
+} 
+
+section.salapan h2 span:nth-child(9):before, 
+section.salapan h2 span:nth-child(9):after{
+	animation-delay: 0.8s;
+} 
+
+section.salapan h2 span:nth-child(10):before, 
+section.salapan h2 span:nth-child(10):after{
+	animation-delay: 0.9s;
+} 
+
+section.salapan h2 span:nth-child(11):before, 
+section.salapan h2 span:nth-child(11):after{
+	animation-delay: 1s;
+} 
+
+/*SECTION SAPULUH*/
+
+section.sapuluh{
+	background: linear-gradient(0deg,#000 0%, #000 50%,#fff 50%,#fff 100%);
+} 
+
+section.sapuluh:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(0deg,#000 0%, #000 50%,#fff 50%,#fff 100%);
+} 
+
+section.sapuluh h2{
+	font-size: 8em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	mix-blend-mode: difference;
+	color: white;
+	transform-origin: center;
+	animation: kuy 9s linear infinite;
+} 
+
+@keyframes kuy{
+	0%{
+		transform: translatey(0px) rotate(-10deg);
+	} 
+	
+	25%{
+	transform: translatey(-150px) rotate(10deg);
+	} 
+	50%{
+	transform: translatey(0px) rotate(-10deg);
+	} 
+	
+	75%{
+	transform: translatey(150px) rotate(10deg);
+	} 
+	100%{
+	transform: translatey(0px) rotate(-10deg);
+	} 
+} 
+
+
+/*SECTION SABELAS*/
+
+section.sabelas{
+	background-color: red;
+} 
+
+section.sabelas .tunggu{
+	position: relative;
+	font-size: 8em;
+	background: white;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 10px;
+	padding: 10px;
+	border-radius: 6px;
+} 
+
+section.sabelas .tunggu:before {
+	content: "";
+	position:absolute;
+	top:0;
+	left:0;
+	width: 170px;
+	height: 100%;
+	background: black;
+	animation: mantul 4s linear infinite;
+} 
+
+@keyframes mantul{
+	0%{ left:0;}
+	50%{left: calc(100% - 170px)}
+	100%{left: 0;}
+} 
+section.sabelas .tunggu span{
+	color: white;
+	mix-blend-mode: difference;
+	
+} 
+
+
+/* SECTION DUABELAS*/
+
+section.duabelas{
+	background: #e91e63;
+} 
+
+section.duabelas h2 {
+	color: white;
+	text-transform: uppercase;
+	border-bottom: 20px solid white;
+	font-size: 7em;
+	width: 100%;
+	text-align: center;
+	box-shadow: 0 10px 10px rgba(0,0,0,.2);
+} 
+
+section.duabelas h2 span:before{
+	content: "";
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	height: 4px;
+	background-color: white;
+	animation: jump 2s linear infinite;
+} 
+
+section.duabelas h2 span {
+	position: relative;
+	display: inline-block;
+	animation: bonce 2s linear infinite;
+} 
+section.duabelas h2 span:nth-child(1):before, 
+section.duabelas h2 span:nth-child(1) {
+	animation-delay:0s;
+} 
+
+section.duabelas h2 span:nth-child(2):before,
+section.duabelas h2 span:nth-child(2) {
+	animation-delay:0.2s;
+} 
+
+section.duabelas h2 span:nth-child(3):before,
+section.duabelas h2 span:nth-child(3) {
+	animation-delay:0.4s;
+} 
+
+section.duabelas h2 span:nth-child(4):before,
+section.duabelas h2 span:nth-child(4) {
+	animation-delay:0.6s;
+} 
+
+section.duabelas h2 span:nth-child(5):before,
+section.duabelas h2 span:nth-child(5) {
+	animation-delay:0.8s;
+} 
+section.duabelas h2 span:nth-child(6):before,
+section.duabelas h2 span:nth-child(6) {
+	animation-delay:1s;
+} 
+
+section.duabelas h2 span:nth-child(7):before,
+section.duabelas h2 span:nth-child(7) {
+	animation-delay:1.2s;
+} 
+
+section.duabelas h2 span:nth-child(8):before,
+section.duabelas h2 span:nth-child(8) {
+	animation-delay:1.4s;
+} 
+
+section.duabelas h2 span:nth-child(9):before,
+section.duabelas h2 span:nth-child(9) {
+	animation-delay:1.6s;
+} 
+
+section.duabelas h2 span:nth-child(10):before,
+section.duabelas h2 span:nth-child(10) {
+	animation-delay:1.8s;
+} 
+
+@keyframes bonce {
+	0%{
+	transform: translatey(0); 
+	} 
+	
+	10%{
+	transform: translatey(-60px); 
+	} 
+	
+	15%{
+	transform: translatey(0); 
+	} 
+	
+	25%{
+	transform: translatey(-45px); 
+	} 
+	
+	30%{
+	transform: translatey(0); 
+	} 
+	
+	40%{
+	transform: translatey(-20px); 
+	} 
+	
+	45%{
+	transform: translatey(0); 
+	} 
+	
+	100%{
+	transform: translatey(0); 
+	} 
+	
+} 
+
+@keyframes jump{
+	0%{
+		bottom: 0;
+		height: 6px;
+	} 
+	
+	10%{
+	bottom: -60px;
+	height: 64px;
+	} 
+	
+	15%{
+	bottom: 0;
+	height: 7px;
+	
+	} 
+	
+	25%{
+		bottom: -40px;
+		height: 44px;
+	
+	} 
+	
+	30%{
+		bottom: 0;
+		height: 7px;
+	} 
+	
+	40%{
+		bottom: -20px;
+		height: 24px;
+	} 
+	
+	45%{
+	bottom: 0;
+	height: 7px;
+	} 
+	
+	100%{
+	bottom: 0;
+	height: 7px;
+	} 
+	
+} 
+
+/*SECTION hati*/
+
+section.tigabelas {
+	background:radial-gradient(#ff0000, #5a0000);
+} 
+
+.hati{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background-color: #e80202;
+	transform: rotate(45deg);
+	box-shadow: 30px 30px 200px rgba(0,0,0,0.5);
+	animation: love 1s linear infinite;
+} 
+
+@keyframes love{
+	0%{
+		transform: rotate(45deg) scale(1);
+	} 
+	20%{
+	transform: rotate(45deg) scale(0.8);
+	} 
+	40%{
+	transform: rotate(45deg) scale(1.2);
+	} 
+	60%{
+	transform: rotate(45deg) scale(1);
+	} 
+	80%{
+	transform: rotate(45deg) scale(1.3);
+	} 
+	
+	100%{
+	transform: rotate(45deg) scale(1);
+	} 
+} 
+
+.hati:before{
+	content: "";
+	position: absolute;
+	top:-200px;
+	width: 300px;
+	height: 200px;
+	background-color:#e80202;
+	border-top-left-radius: 200px;
+	border-top-right-radius: 200px;
+} 
+
+.hati:after{
+	content: "";
+	position: absolute;
+	left:-200px;
+	width: 200px;
+	height: 300px;
+	background-color:#e80202;
+	border-top-left-radius: 200px;
+	border-bottom-left-radius: 200px;
+} 
+
+section.tigabelas h2{
+	position: absolute;
+	bottom: 10%;
+	font-size: 8em;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	font-weight: bold;
+	-webkit-text-stroke: 3px white;
+	color: transparent;
+} 
+
+
+section.empatbelas{
+	background-color: salmon;
+} 
+
+section.empatbelas h2 {
+	position: relative;
+	overflow: hidden;
+	text-transform: uppercase;
+	font-family: arial;
+	font-size: 9em;
+	letter-spacing: 2px;
+	background: linear-gradient(90deg,salmon, white, salmon);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	animation: geser3 5s linear infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} 
+
+@keyframes geser3 {
+	0%{ background-position: -500%;}
+	100%{ background-position: 500%;}
+} 
+
+
+
+/*SECTION LIMABELAS*/
+
+section.limabelas{
+	background-color: #34495e;
+} 
+
+section.limabelas .muterin{
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	border-top: 20px solid #e74c3c;
+	position: relative;
+	animation: a1 2s linear infinite;
+} 
+
+section.limabelas .muterin:before, 
+section.limabelas .muterin:after{
+	content: "";
+	position: absolute;
+	top:-20px;
+	left:0;
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+} 
+
+section.limabelas .muterin:before{
+	border-top: 20px solid #e67e22;
+	transform: rotate(120deg);
+} 
+section.limabelas .muterin:after{
+	border-top: 20px solid #3498db;
+	transform: rotate(240deg);
+} 
+
+section.limabelas .muterin span {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	color: white;
+	text-align: center;
+	line-height: 600px;
+	animation: a2 2s linear infinite;
+	font-size: 5em;
+} 
+
+
+@keyframes a1{
+	to{
+		transform: rotate(360deg);
+	} 
+} 
+
+
+@keyframes a2{
+	to{
+		transform: rotate(-360deg);
+	} 
+} 
+
+
+/* SECTION GENAPBELAS*/
+
+section.genapbelas{
+	background-color: white;
+} 
+
+section.genapbelas .kotak{
+	background-color: #3489db;
+	color: white;
+	padding: 15px 25px;
+	font-weight: 900;
+	transform-origin: top left;
+	font-size: 7em;
+	animation: hinge 2.5s ease-in-out infinite;
+} 
+
+@keyframes hinge {
+	20%,60%{
+		transform: rotate(70deg);
+	} 
+	
+	40%,80%{
+		transform: rotate(55deg);
+		opacity:1;
+	} 
+	
+	100%{
+		transform: translatey(600px);
+		opacity:0;
+	} 
+} 
