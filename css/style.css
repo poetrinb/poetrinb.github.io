@@ -29,7 +29,7 @@ section.tengah{
 	height: 100px;
 	display: flex;
 	align-items: center;
-	opacity: 0.5;
+	opacity: 0.4;
 } 
 .box-intragram img.instragram{
 	width: 70px;
@@ -917,7 +917,7 @@ section.limabelas .muterin span {
 /* SECTION GENAPBELAS*/
 
 section.genapbelas{
-	background-color: white;
+	background-color: lightblue;
 } 
 
 section.genapbelas .kotak{
@@ -928,6 +928,7 @@ section.genapbelas .kotak{
 	transform-origin: top left;
 	font-size: 7em;
 	animation: hinge 2.5s ease-in-out infinite;
+	border-radius: 8px;
 } 
 
 @keyframes hinge {
