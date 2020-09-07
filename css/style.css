@@ -1,3 +1,9 @@
+@font-face {
+     font-family: coolveticarg;
+     src: url('coolveticarg.ttf');
+}
+
+
 *{
 		margin:0;
 		padding:0;
@@ -1026,3 +1032,38 @@ section.tujuhbelas .kotak .face.face2 span{
 		right: 200%;
 	} 
 } 
+
+
+/* SECTION DALAPANBELAS*/
+
+section.dalapanbelas .logo, .logo-under{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "coolveticarg";
+    font-size: 160px;
+    animation: road 10s linear infinite alternate;
+}
+
+section.dalapanbelas .logo{
+    color: #ffffff36;
+    background-image: url(../img/clipart.png);
+    -webkit-background-clip: text;
+    background-size: cover;
+}
+
+section.dalapanbelas .logo-under{
+    z-index: -1;
+    color: #0984e3;
+}
+
+@keyframes road {
+    from {
+        background-position: left 0 top -80px;
+    }
+    to {
+        background-position: left 500px top -80px;;
+    }
+}
+
