@@ -153,7 +153,7 @@ ptombol.addEventListener("click", function(e) {
 	e.preventDefault();
 	
 	var kamu = forputri.value;
-	if(kamu === "sayangkuputrinadia" ) {
+	if(kamu === "22agustus2020") {
 		boxputri.style.display = "block";
 		
 	}else{
