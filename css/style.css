@@ -1626,7 +1626,7 @@ section.duaopat ul li{
 	list-style: none;
 	font-size:8em;
 	font-weight: bold;
-	letter-spacing: 14px;
+	letter-spacing: 15px;
 	color: #484848;
 	text-shadow: none;
 	animation: sayang 1s linear infinite;
@@ -2072,7 +2072,7 @@ section.iloveu img.kusayang{
 	left:0;
 	width:100%;
 	z-index:-1;
-	opacity: 0.18;
+	opacity: 0.21;
 }
 
 section.iloveu img.kusayang2{
