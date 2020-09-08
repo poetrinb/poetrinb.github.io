@@ -53,13 +53,18 @@ const textwrite = function(txtwrite, words, wait = 3000) {
 	document.addEventListener("DOMContentLoaded", init);
 	
 	function init() {
-		const txtwrite = document.querySelector("h1");
+		const txtwrite = document.querySelector("section.satu h1");
 		const words = JSON.parse(txtwrite.getAttribute("data-words"));
 		const wait = txtwrite.getAttribute("data-wait");
 		
 		
 		new textwrite(txtwrite, words, wait );
 		
+		const txtwrite2 = document.querySelector("#dear");
+		const words2 = JSON.parse(txtwrite2.getAttribute("data-words"));
+		const wait2 = txtwrite2.getAttribute("data-wait");
+		
+		new textwrite(txtwrite2, words2, wait2);
 	} 
 
 //hujan
@@ -134,4 +139,24 @@ setInterval(() => {
 	hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
 	mn.style.transform = `rotateZ(${mm}deg)`;
 	sc.style.transform = `rotateZ(${ss}deg)`;
+});
+
+
+
+
+const forputri = document.querySelector("#forputri");
+const ptombol = document.querySelector("#ptombol");
+
+const boxputri = document.querySelector("#boxputri");
+
+ptombol.addEventListener("click", function(e) {
+	e.preventDefault();
+	
+	const kamu = forputri.value;
+	if(kamu === "sayangkuputrinadia" ) {
+		boxputri.style.display = "block";
+	}else{
+		alert("Kode Yang kamu Masukan Salahh");
+	} 
+
 });
