@@ -1775,3 +1775,221 @@ section.dualima ul li:nth-child(9){
 section.dualima ul li:nth-child(10){
 	animation-delay: 1.8s;
 } 
+
+/*SECTION DUAGENAP*/
+
+section.duagenap{
+	background-color:#68a4ff;
+	z-index: -3;
+} 
+
+section.duagenap .clock{
+	width:500px;
+	height:500px;
+	background-color: white;
+	border: 20px solid white;
+	display: flex;
+	justify-content: center;
+	background: white url(../img/clock.png);
+	background-size: cover;
+	align-items: center;
+	border-radius: 50%;
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.1), 
+				0 20px 20px rgba(0,0,0,0.2), 
+				0 0 0 4px rgba(255,255,255,1);
+} 
+
+section.duagenap .clock:before{
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color:#848484;
+	border: 2px solid white;
+	border-radius: 50%;
+	z-index: 10000;
+} 
+
+section.duagenap .hour, section.duagenap .min, section.duagenap .sec{
+	position: absolute;
+} 
+
+section.duagenap .hour, section.duagenap .hr{
+	width: 210px;
+	height:210px;
+} 
+section.duagenap .min, section.duagenap .mn{
+	width:260px;
+	height:260px;
+}
+
+section.duagenap .sec, section.duagenap .sc{
+	width:320px;
+	height:320px;
+} 
+
+section.duagenap .sc,section.duagenap .mn,section.duagenap .hr{
+	position: absolute;
+	display: flex;
+	justify-content:center;
+	border-radius: 50%;
+} 
+
+section.duagenap .hr::before{
+	content: "";
+	position: absolute;
+	width:9px;
+	height:100px;
+	background-color:#484848;
+	border-radius: 6px 6px 0 0;
+	z-index:10;
+} 
+
+section.duagenap .mn::before{
+	content: "";
+	position: absolute;
+	width:6px;
+	height:130px;
+	background-color:#d6d6d6;
+	border-radius: 6px 6px 0 0;
+	z-index:11;
+} 
+
+section.duagenap .sc::before{
+	content: "";
+	position: absolute;
+	width:4px;
+	height:220px;
+	background-color:#ff6767;
+	border-radius: 6px 6px 0 0;
+	z-index:12;
+} 
+
+
+
+/*SECTION DUATUJUH*/
+section.duatujuh{
+	background: radial-gradient(#03a94f,#004b6d);
+} 
+
+section.duatujuh h2{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	font-size:8em;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: white;
+} 
+
+section.duatujuh h2:before{
+	content: attr(data-text);
+	position: absolute;
+	letter-spacing: 5px;
+	top:0;
+	left:0;
+	transform-origin: bottom;
+	transform: rotatex(180deg);
+	line-height: 1em;
+	background: linear-gradient(0deg, #fff 0, transparent 80%);
+	-webkit-background-clip: text;
+	color: transparent;
+	opacity:0.7;
+} 
+
+/*SECTION DUADALAPAN*/
+section.duadalapan{
+	background-color:blueviolet;
+} 
+
+section.duadalapan h2 {
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	font-size: 8em;
+} 
+
+section.duadalapan h2 span{
+	color: white;
+	padding:5px;
+	display: table-cell;
+	text-shadow: 0 3px 0 #d8d8d8, 
+				0 4px 0 #d8d8d8, 
+				0 5px 0 #d8d8d8;
+	animation: kuykeun 1s linear infinite;
+} 
+
+@keyframes kuykeun {
+	0%{
+		transform: translatey(0px);
+		text-shadow: 0 8px 0 #d8d8d8, 
+		0 9px 0 #d8d8d8, 
+		0 10px 0 #d8d8d8, 
+		0 11px 15px rgba(0,0,0,0.3);
+	} 
+	50%{
+		transform: translatey(-80px);
+		text-shadow: 0 8px 0 #d8d8d8, 
+		0 9px 0 #d8d8d8, 
+		0 10px 0 #d8d8d8, 
+		0 95px 15px rgba(0,0,0,0.3);
+	} 
+	100%{
+		transform: translatey(0px);
+		text-shadow: 0 8px 0 #d8d8d8, 
+		0 9px 0 #d8d8d8, 
+		0 10px 0 #d8d8d8, 
+		0 11px 15px rgba(0,0,0,0.3);
+	} 
+} 
+
+section.duadalapan h2 span:nth-child(1) {
+	animation-delay: 0s;
+} 
+
+
+section.duadalapan h2 span:nth-child(2) {
+	animation-delay: 0.1s;
+} 
+
+
+section.duadalapan h2 span:nth-child(3) {
+	animation-delay: 0.2s;
+} 
+
+
+section.duadalapan h2 span:nth-child(4) {
+	animation-delay: 0.3s;
+} 
+
+
+section.duadalapan h2 span:nth-child(5) {
+	animation-delay: 0.4s;
+} 
+
+
+section.duadalapan h2 span:nth-child(6) {
+	animation-delay: 0.5s;
+} 
+
+
+section.duadalapan h2 span:nth-child(7) {
+	animation-delay: 0.6s;
+} 
+
+
+section.duadalapan h2 span:nth-child(8) {
+	animation-delay: 0.7s;
+} 
+
+
+section.duadalapan h2 span:nth-child(9) {
+	animation-delay: 0.8s;
+} 
+
+
+section.duadalapan h2 span:nth-child(10) {
+	animation-delay: 0.9s;
+} 
