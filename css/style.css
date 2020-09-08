@@ -2065,3 +2065,19 @@ section.iloveu p {
 	font-size: 80px;
 	transform: translatey(8px) translatex(-10px);
 } 
+
+section.iloveu img.kusayang{
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:-1;
+	opacity: 0.18;
+}
+
+section.iloveu img.kusayang2{
+	margin-top: 107vh;
+} 
+section.iloveu img.kusayang3{
+	margin-top: 214vh;
+} 
