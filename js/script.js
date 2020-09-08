@@ -152,7 +152,7 @@ const boxputri = document.querySelector("#boxputri");
 ptombol.addEventListener("click", function(e) {
 	e.preventDefault();
 	
-	const kamu = forputri.value;
+	var kamu = forputri.value;
 	if(kamu === "sayangkuputrinadia" ) {
 		boxputri.style.display = "block";
 		kamu = "";
