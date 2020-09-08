@@ -155,8 +155,10 @@ ptombol.addEventListener("click", function(e) {
 	const kamu = forputri.value;
 	if(kamu === "sayangkuputrinadia" ) {
 		boxputri.style.display = "block";
+		kamu = "";
 	}else{
 		alert("Kode Yang kamu Masukan Salahh");
+		kamu = "";
 	} 
 
 });
