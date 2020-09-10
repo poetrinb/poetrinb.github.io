@@ -1,0 +1,150 @@
+
+/* MODAL */
+div.blank{
+	position: fixed;
+	z-index: 999;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: rgba(0,0,0,.6);
+	visibility: hidden;
+	opacity:0;
+	transition: 0.3s;
+	pointer-events: none;
+} 
+img.cancel{
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	right:3%;
+	top:3%;
+	z-index: 99999;
+	pointer-events:all;
+	transition: 0.2s;
+} 
+.container{
+	width: 90%;
+	height:auto;
+	margin: 50px auto;
+	position: relative;
+	pointer-events: all;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+} 
+
+.container div.kotak{
+	width: 21%;
+	height: 170px;
+	background-color: dodgerblue;
+	border-radius: 10px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	margin-top: 80px;
+	position: relative;
+} 
+
+.container div.kotak h3{
+	font-size: 5em;
+} 
+
+.container div.kotak h4{
+	position: absolute;
+	top:82%;
+	left:50%;
+	letter-spacing:3px;
+	transform: translate(-50%,-50%);
+	font-size:2em;
+	opacity:0.5;
+	text-transform: uppercase;
+} 
+
+section.animfixed{
+	position: fixed;
+	left:50%;
+	top:50%;
+	width: 90%;
+	height: 90%;
+	transform: translate(-50%,-50%);
+	z-index: 999;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+} 
+
+
+/*TITLE*/
+section.title{
+	padding: 50px 70px;
+	font-size: 4.6em;
+	font-weight: bold;
+	color: #333;
+	letter-spacing:5px;
+	display: none;
+} 
+
+/*MYFOTO*/
+section.myfoto {
+	margin: 0 0 150px;
+	display: none;
+} 
+
+html,
+body{
+    position: relative;
+    height: 100%;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: all;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .gallery-top {
+    height: 78%;
+    width: 95%;
+    filter: brightness(0.8);
+  }
+
+  .gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+  /*SWIPER2*/
+  
+ section.myfoto2{
+ 	height: 45vh;
+ 	display: none;
+} 
+  
+  .swiper-container2 {
+  width: 100%;
+  height: 90%;
+  padding-bottom: 100px;
+  }
+  
+  .swiper-size{
+ 	 width: 520px;
+  }

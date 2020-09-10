@@ -16,6 +16,8 @@ body{
 	pointer-events: none;
 } 
 
+
+
 section.tengah{
 	display: flex;
 	justify-content: center;
@@ -45,6 +47,10 @@ section.tengah{
 .box-intragram p {
 	color: white;
 	font-size: 2.7em;
+} 
+
+section.hilang{
+	display: none;
 } 
 
 /*SECTION SATU*/
@@ -157,7 +163,7 @@ section.tilu img.love{
 .loader span{
 	position: relative;
 	color: white;
-	font-size: 4em;
+	font-size: 3.6em;
 	display: inline-block;
 	text-transform: uppercase;
 	animation: state 2.2s ease-in-out infinite;
@@ -350,7 +356,7 @@ section.tujuh {
 section.tujuh h2{
 	position: relative;
 	width: 80%;
-	font-size: 6.2em;
+	font-size: 5.5em;
 	color: white;
 	letter-spacing: 5px;
 } 
@@ -412,7 +418,7 @@ section.salapan{
 } 
 
 section.salapan h2{
-	font-size: 7em;
+	font-size: 6.5em;
 	position:relative;
 } 
 
@@ -602,6 +608,8 @@ section.sabelas .tunggu span{
 } 
 
 
+
+
 /* SECTION DUABELAS*/
 
 section.duabelas{
@@ -612,7 +620,7 @@ section.duabelas h2 {
 	color: white;
 	text-transform: uppercase;
 	border-bottom: 20px solid white;
-	font-size: 7em;
+	font-size: 6.5em;
 	width: 100%;
 	text-align: center;
 	box-shadow: 0 10px 10px rgba(0,0,0,.2);
@@ -1036,6 +1044,10 @@ section.tujuhbelas .kotak .face.face2 span{
 
 
 /* SECTION DALAPANBELAS*/
+
+section.dalapanbelas{
+	background-color: white;
+} 
 
 section.dalapanbelas .logo, .logo-under{
     position: absolute;
@@ -2001,22 +2013,22 @@ section.duadalapan h2 span:nth-child(10) {
 
 section.satu form{
 	position: absolute;
-	bottom:80px;
+	bottom:150px;
 } 
 
 section.satu input{
-	width: 620px;
-	height: 90px;
-	font-size:40px;
-	color: rgba(0,0,0,0.5);
+	width: 650px;
+	height: 100px;
+	font-size:38px;
+	color: #333;
 	padding-left: 11px;
 	border: none;
-	letter-spacing: 3px;
+	letter-spacing: 2px;
 	border-radius: 5px;
 } 
 
 section.satu button{
-	height:90px;
+	height:100px;
 	width: 150px;
 	background-color: blue;
 	font-size:35px;
@@ -2025,6 +2037,7 @@ section.satu button{
 	border: none;
 	text-transform: uppercase;
 	border-radius: 5px;
+	outline: none;
 	font-weight: bold;
 	margin-left: 15px;
 } 
@@ -2052,8 +2065,8 @@ section.iloveu h4{
 	font-weight:400;
 } 
 section.iloveu h5{
-	font-size: 2.5em;
-	margin: 100px 50px 0;
+	font-size: 2.2em;
+	margin: 100px 70px 0;
 	color: #333;
 	text-align: center;
 	font-weight:400;

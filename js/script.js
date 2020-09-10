@@ -1,4 +1,246 @@
 
+
+const cancel = document.querySelectorAll("#cancel");
+const blank = document.querySelector("#blank");
+
+cancel.forEach(function(cance) {
+	cance.addEventListener("click", function(e) {
+		e.target.parentElement.style.display = "none";
+		blank.style.visibility = "hidden";
+		blank.style.opacity = "0";
+	});
+});
+
+const animasiSatu = document.querySelector("#animasiSatu");
+const tombolSatu = document.querySelector("div.container #tombolSatu");
+tombolSatu.addEventListener("click", function(e) {
+	animasiSatu.classList.add("animfixed");
+	animasiSatu.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiDua = document.querySelector("#animasiDua");
+const tombolDua = document.querySelector("div.container #tombolDua");
+tombolDua.addEventListener("click", function(e) {
+	animasiDua.classList.add("animfixed");
+	animasiDua.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+
+const animasiTiga = document.querySelector("#animasiTilu");
+const tombolTiga = document.querySelector("div.container #tombolTilu");
+tombolTiga.addEventListener("click", function(e) {
+	animasiTiga.classList.add("animfixed");
+	animasiTiga.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiEmpat = document.querySelector("#animasiEmpat");
+const tombolEmpat = document.querySelector("div.container #tombolEmpat");
+tombolEmpat.addEventListener("click", function(e) {
+	animasiEmpat.classList.add("animfixed");
+	animasiEmpat.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiLima = document.querySelector("#animasiLima");
+const tombolLima = document.querySelector("div.container #tombolLima");
+tombolLima.addEventListener("click", function(e) {
+	animasiLima.classList.add("animfixed");
+	animasiLima.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiEnam = document.querySelector("#animasiEnam");
+const tombolEnam = document.querySelector("div.container #tombolEnam");
+tombolEnam.addEventListener("click", function(e) {
+	animasiEnam.classList.add("animfixed");
+	animasiEnam.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiTujuh = document.querySelector("#animasiTujuh");
+const tombolTujuh = document.querySelector("div.container #tombolTujuh");
+tombolTujuh.addEventListener("click", function(e) {
+	animasiTujuh.classList.add("animfixed");
+	animasiTujuh.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+
+const animasiDalapan = document.querySelector("#animasiDalapan");
+const tombolDalapan = document.querySelector("div.container #tombolDalapan");
+tombolDalapan.addEventListener("click", function(e) {
+	animasiDalapan.classList.add("animfixed");
+	animasiDalapan.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiSalapan = document.querySelector("#animasiSalapan");
+const tombolSalapan = document.querySelector("div.container #tombolSalapan");
+tombolSalapan.addEventListener("click", function(e) {
+	animasiSalapan.classList.add("animfixed");
+	animasiSalapan.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiSapuluh = document.querySelector("#animasiSapuluh");
+const tombolSapuluh = document.querySelector("div.container #tombolSapuluh");
+tombolSapuluh.addEventListener("click", function(e) {
+	animasiSapuluh.classList.add("animfixed");
+	animasiSapuluh.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiSabelas = document.querySelector("#animasiSabelas");
+const tombolSabelas = document.querySelector("div.container #tombolSabelas");
+tombolSabelas.addEventListener("click", function(e) {
+	animasiSabelas.classList.add("animfixed");
+	animasiSabelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiDuabelas = document.querySelector("#animasiDuabelas");
+const tombolDuabelas = document.querySelector("div.container #tombolDuabelas");
+tombolDuabelas.addEventListener("click", function(e) {
+	animasiDuabelas.classList.add("animfixed");
+	animasiDuabelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiTilubelas = document.querySelector("#animasiTilubelas");
+const tombolTilubelas = document.querySelector("div.container #tombolTilubelas");
+tombolTilubelas.addEventListener("click", function(e) {
+	animasiTilubelas.classList.add("animfixed");
+	animasiTilubelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiEmpatbelas = document.querySelector("#animasiOpatbelas");
+const tombolEmpatbelas = document.querySelector("div.container #tombolEmpatbelas");
+tombolEmpatbelas.addEventListener("click", function(e) {
+	animasiEmpatbelas.classList.add("animfixed");
+	animasiEmpatbelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiLimabelas = document.querySelector("#animasiLimabelas");
+const tombolLimabelas = document.querySelector("div.container #tombolLimabelas");
+tombolLimabelas.addEventListener("click", function(e) {
+	animasiLimabelas.classList.add("animfixed");
+	animasiLimabelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiGenapbelas = document.querySelector("#animasiGenapbelas");
+const tombolGenapbelas = document.querySelector("div.container #tombolGenapbelas");
+tombolGenapbelas.addEventListener("click", function(e) {
+	animasiGenapbelas.classList.add("animfixed");
+	animasiGenapbelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiTujuhbelas = document.querySelector("#animasiTujuhbelas");
+const tombolTujuhbelas = document.querySelector("div.container #tombolTujuhbelas");
+tombolTujuhbelas.addEventListener("click", function(e) {
+	animasiTujuhbelas.classList.add("animfixed");
+	animasiTujuhbelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiDalapanbelas = document.querySelector("#animasiDalapanbelas");
+const tombolDalapanbelas = document.querySelector("div.container #tombolDalapanbelas");
+tombolDalapanbelas.addEventListener("click", function(e) {
+	animasiDalapanbelas.classList.add("animfixed");
+	animasiDalapanbelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiSalapanbelas = document.querySelector("#animasiSalapanbelas");
+const tombolSalapanbelas = document.querySelector("div.container #tombolSalapanbelas");
+tombolSalapanbelas.addEventListener("click", function(e) {
+	animasiSalapanbelas.classList.add("animfixed");
+	animasiSalapanbelas.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiDuapuluh = document.querySelector("#animasiDuapuluh");
+const tombolDuapuluh = document.querySelector("div.container #tombolDuapuluh");
+tombolDuapuluh.addEventListener("click", function(e) {
+	animasiDuapuluh.classList.add("animfixed");
+	animasiDuapuluh.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiDuahiji = document.querySelector("#animasiDuahiji");
+const tombolDuahiji = document.querySelector("div.container #tombolDuahiji");
+tombolDuahiji.addEventListener("click", function(e) {
+	animasiDuahiji.classList.add("animfixed");
+	animasiDuahiji.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+const animasiDuadua = document.querySelector("#animasiDuadua");
+const tombolDuadua = document.querySelector("div.container #tombolDuadua");
+tombolDuadua.addEventListener("click", function(e) {
+	animasiDuadua.classList.add("animfixed");
+	animasiDuadua.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiDuatilu = document.querySelector("#animasiDuatilu");
+const tombolDuatilu = document.querySelector("div.container #tombolDuatilu");
+tombolDuatilu.addEventListener("click", function(e) {
+	animasiDuatilu.classList.add("animfixed");
+	animasiDuatilu.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiDuaopat = document.querySelector("#animasiDuaempat");
+const tombolDuaopat = document.querySelector("div.container #tombolDuaempat");
+tombolDuaopat.addEventListener("click", function(e) {
+	animasiDuaopat.classList.add("animfixed");
+	animasiDuaopat.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+const animasiDualima = document.querySelector("#animasiDualima");
+const tombolDualima = document.querySelector("div.container #tombolDualima");
+tombolDualima.addEventListener("click", function(e) {
+	animasiDualima.classList.add("animfixed");
+	animasiDualima.style.display = "flex";
+	blank.style.visibility = "visible";
+	blank.style.opacity = "1";
+});
+
+
+
+
+
 /*animasi ketik*/
 const textwrite = function(txtwrite, words, wait = 3000) {
 		this.txtwrite = txtwrite;
@@ -148,6 +390,9 @@ const forputri = document.querySelector("#forputri");
 const ptombol = document.querySelector("#ptombol");
 
 const boxputri = document.querySelector("#boxputri");
+const myfoto = document.querySelector("#myfoto");
+const myfoto2 = document.querySelector("#myfoto2");
+const title = document.querySelector("#title");
 
 ptombol.addEventListener("click", function(e) {
 	e.preventDefault();
@@ -155,10 +400,18 @@ ptombol.addEventListener("click", function(e) {
 	var kamu = forputri.value;
 	if(kamu === "22agustus2020" ) {
 		boxputri.style.display = "block";
-		
+	}else if( kamu === "2122" ) {
+		myfoto.style.display = "flex";
+		myfoto2.style.display = "flex";
+		title.style.display = "block";
 	}else{
 		alert("Kode Yang kamu Masukan Salahh");
 	
 	} 
 	forputri.value = "";
 });
+
+
+
+
+
