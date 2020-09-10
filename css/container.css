@@ -231,7 +231,7 @@ section.quotes h2.right{
 	opacity:0;
 } 
 
-.navbar .box span:nth-child(2) {
+/*.navbar .box span:nth-child(2) {
 	transform-origin: 0 0;
 } 
 .navbar .box input:checked ~ span:nth-child(2){
@@ -250,6 +250,29 @@ section.quotes h2.right{
 .navbar .box input:checked ~ span:nth-child(4){
 	transform: rotate(-45deg) translate(5px, 9px);
 } 
+*/
+
+.navbar .box span:nth-child(2) {
+	transform-origin: 0 0;
+} 
+.navbar .box.active span:nth-child(2){
+	transform: rotate(45deg) translate(4px, -9px);
+} 
+
+.navbar .box.active span:nth-child(3){
+	transform: translatex(100px);
+	opacity:0;
+} 
+
+
+.navbar .box span:nth-child(4) {
+	transform-origin: 0 100%;
+} 
+.navbar .box.active span:nth-child(4){
+	transform: rotate(-45deg) translate(5px, 9px);
+} 
+
+
 
 .navbar .nav{
 	position: fixed;
@@ -269,7 +292,7 @@ section.quotes h2.right{
 	left:0;
 } 
 .navbar .box.left{
-	transform: translatex(450px);
+	transform: translatex(465px);
 } 
 .navbar .nav ul {
 	position: relative;
@@ -290,14 +313,17 @@ section.quotes h2.right{
 } 
 .navbar .nav ul li {
 	width: 100%;
-	text-align: left;
-	padding-left: 50px;
-	font-size: 2em;
-	padding: 10px;
-	font-weight: 600;
+	font-size: 2.8em;
+	font-family: 'Roboto', sans-serif;
+	padding: 15px 20px;
+	list-style: none;
+	letter-spacing: 5px;
+	background-color: white;
+	margin: 5px 20px;
+	border-radius: 5px;
 } 
 .navbar .nav ul li a {
-	color: white;
+	color: dodgerblue;
 	text-decoration: none;
-	font-weight: 400;
+	font-weight: 800;
 } 

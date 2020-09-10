@@ -416,11 +416,14 @@ ptombol.addEventListener("click", function(e) {
 const box = document.querySelector(".box");
 const nav = document.querySelector(".nav");
 const loveve = document.querySelector("#loveve");
-box.addEventListener("click", function() {
+
+function tombolklik() {
 	nav.classList.toggle("active");
-	this.classList.toggle("left");
+	box.classList.toggle("left");
 	loveve.classList.toggle("active");
-});
+	box.classList.toggle("active");
+}
+
 
 const navbar = document.querySelector("#navbar");
 window.addEventListener("scroll", function() {
