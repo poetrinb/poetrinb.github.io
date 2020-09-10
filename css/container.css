@@ -148,3 +148,25 @@ body{
   .swiper-size{
  	 width: 520px;
   }
+  
+  
+/*SECTION qotes*/
+
+
+section.quotes{
+	display: block;
+	padding:50px;
+} 
+section.quotes h2{
+	margin-top:60px;
+	font-size: 2.2em;
+	font-weight:500;
+} 
+section.quotes h2.left{
+	text-align: left;
+	margin-right: 30%;
+} 
+section.quotes h2.right{
+	text-align: right;
+	margin-left: 30%;
+} 
