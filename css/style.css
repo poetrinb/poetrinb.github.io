@@ -25,6 +25,7 @@ section.tengah{
 	height: 80vh;
 	overflow: hidden;
 	position: relative;
+	z-index:-1;
 } 
 
 /*utility*/

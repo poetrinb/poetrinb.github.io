@@ -31,6 +31,7 @@ img.cancel{
 	pointer-events: all;
 	display: flex;
 	flex-wrap: wrap;
+	z-index:-1;
 	justify-content: space-between;
 } 
 
@@ -169,4 +170,134 @@ section.quotes h2.left{
 section.quotes h2.right{
 	text-align: right;
 	margin-left: 30%;
+} 
+
+
+.navbar{
+	position: fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 50px;
+	height: 8vh;
+	pointer-events: all;
+	transition: 0.4s all;
+} 
+.navbar h1{
+	font-size: 5.5em;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 10px;
+	transition: 0.5s;
+} 
+.navbar h1.active{
+	transform: translatex(350px);
+} 
+.navbar.active {
+	background-color: royalblue;
+	height: 10vh;
+	box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+} 
+
+.navbar .box {
+	position:relative;
+	width: 100px;
+	height:90px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	z-index: 9999;
+	transition: 0.5s all ease;
+}  
+
+.navbar .box span{
+	display: block;
+	width: 100px;
+	height: 7px;
+	background-color: white;
+	border-radius: 3px;
+	transition: 0.5s ease;
+} 
+
+.navbar .box input {
+	position: absolute;
+	width: 100%;
+	height:100%;
+	z-index:100;
+	opacity:0;
+} 
+
+.navbar .box span:nth-child(2) {
+	transform-origin: 0 0;
+} 
+.navbar .box input:checked ~ span:nth-child(2){
+	transform: rotate(45deg) translate(4px, -9px);
+} 
+
+.navbar .box input:checked ~ span:nth-child(3){
+	transform: translatex(100px);
+	opacity:0;
+} 
+
+
+.navbar .box span:nth-child(4) {
+	transform-origin: 0 100%;
+} 
+.navbar .box input:checked ~ span:nth-child(4){
+	transform: rotate(-45deg) translate(5px, 9px);
+} 
+
+.navbar .nav{
+	position: fixed;
+	top:0;
+	left:-100%;
+	width: 50%;
+	height: 130%;
+	background-color: royalblue;
+	padding-top: 50px;
+	transition: 0.4s all;
+	z-index: 99;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+} 
+
+.navbar .nav.active {
+	left:0;
+} 
+.navbar .box.left{
+	transform: translatex(450px);
+} 
+.navbar .nav ul {
+	position: relative;
+	top:0;
+	left:0;
+	width: 100%
+	text-align: center;
+} 
+
+.navbar .nav ul h1{
+	text-align: center;
+	color: white;
+	margin-top: -20px;
+	font-weight: bold;
+	font-size: 6em;
+	letter-spacing: 6px;
+	margin-bottom: 10px;
+} 
+.navbar .nav ul li {
+	width: 100%;
+	text-align: left;
+	padding-left: 50px;
+	font-size: 2em;
+	padding: 10px;
+	font-weight: 600;
+} 
+.navbar .nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
 } 

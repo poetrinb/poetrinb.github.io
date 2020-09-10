@@ -413,5 +413,20 @@ ptombol.addEventListener("click", function(e) {
 
 
 
+const box = document.querySelector(".box");
+const nav = document.querySelector(".nav");
+const loveve = document.querySelector("#loveve");
+box.addEventListener("click", function() {
+	nav.classList.toggle("active");
+	this.classList.toggle("left");
+	loveve.classList.toggle("active");
+});
 
-
+const navbar = document.querySelector("#navbar");
+window.addEventListener("scroll", function() {
+	if(window.scrollY > 0) {
+		navbar.classList.add("active");
+	}else{
+		navbar.classList.remove("active");
+	} 
+});
